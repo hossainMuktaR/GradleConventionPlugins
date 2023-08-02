@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic-binary")
     repositories {
         google()
         mavenCentral()
