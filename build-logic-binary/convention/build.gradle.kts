@@ -5,8 +5,8 @@ plugins {
 group = "com.example.convention"
 
 dependencies {
-    compileOnly(libs.android.gradlePlugin)
-    compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.gradle)
+    compileOnly(libs.kotlin.gradle.plugin)
 }
 
 gradlePlugin {
