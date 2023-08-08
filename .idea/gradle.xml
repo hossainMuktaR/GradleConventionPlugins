@@ -7,6 +7,10 @@
         <compositeConfiguration>
           <compositeBuild compositeDefinitionSource="SCRIPT">
             <builds>
+              <build path="$PROJECT_DIR$/build-logic-binary" name="build-logic-binary">
+                <projects>
+                  <project path="$PROJECT_DIR$/build-logic-binary" />
+                  <project path="$PROJECT_DIR$/build-logic-binary/convention" />
               <build path="$PROJECT_DIR$/build-logic" name="build-logic">
                 <projects>
                   <project path="$PROJECT_DIR$/build-logic" />
@@ -24,9 +28,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+
+            <option value="$PROJECT_DIR$/build-logic-binary" />
+            <option value="$PROJECT_DIR$/build-logic-binary/convention" />
+
             <option value="$PROJECT_DIR$/build-logic" />
             <option value="$PROJECT_DIR$/build-logic/scriptPlugins" />
             <option value="$PROJECT_DIR$/buildSrc" />
+
           </set>
         </option>
       </GradleProjectSettings>
