@@ -13,6 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
-
-/build-logic
-/buildSrc
+# classpath open fail when git add
+/buildSrc/build/
+/build-logic/scriptPlugins/build
